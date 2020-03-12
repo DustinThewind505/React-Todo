@@ -59,6 +59,15 @@ class App extends React.Component {
     });
   };
 
+  clearPurchased = () => {
+    this.setState({
+      taskList: this.state.taskList.filter(item => {
+        return !item.purchased;
+      })
+    });
+  };
+
+
   render() {
     console.log('rendering...');
     return (
@@ -70,6 +79,7 @@ class App extends React.Component {
         <TaskList
           tasks={this.state.taskList}
           toggleItem={this.toggleItem}
+          clearPurchased={this.clearPurchased}
         />
       </div>
     );
