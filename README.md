@@ -21,7 +21,7 @@ We're going to practice building a stateful class component with this project. E
 ```js
 [
   {
-    task: 'Organize Garage',
+    task: 'Organize Garage',1
     id: 1528817077286,
     completed: false
   },
