@@ -73,7 +73,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="header">
-          <h1>Shopping List</h1>
+          <h1>Things to do today</h1>
           <ListForm addNewItem={this.addNewItem} />
         </div>
         <TaskList
