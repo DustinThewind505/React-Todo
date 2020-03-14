@@ -50,7 +50,7 @@ class App extends React.Component {
 
   addNewItem = itemText => {
     const newItem = {
-      name: itemText,
+      task: itemText,
       id: Date.now(),
       purchased: false
     };
