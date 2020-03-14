@@ -7,7 +7,7 @@ import Item from './Todo';
 const TaskList = props => {
   // const sortedList = props.groceries.sort((a, b) => a.purchased - b.purchased);
   return (
-    <div className="shopping-list">
+    <div>
       {props.tasks.map(item => (
         <Item key={item.id} item={item} toggleItem={props.toggleItem} />
       ))}
